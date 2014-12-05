@@ -1,0 +1,58 @@
+***************
+*** 94,118 ****
+  	__raw_writel(BM_LCDIF_CTRL1_RESET, REGS_LCDIF_BASE + HW_LCDIF_CTRL1_SET);	/* high */
+  	mdelay(1);
+  
+- 	setup_dotclk_panel(DOTCLK_V_PULSE_WIDTH, DOTCLK_V_PERIOD,
+- 			   DOTCLK_V_WAIT_CNT, DOTCLK_V_ACTIVE,
+- 			   DOTCLK_H_PULSE_WIDTH, DOTCLK_H_PERIOD,
+- 			   DOTCLK_H_WAIT_CNT, DOTCLK_H_ACTIVE, 0);
+  
+  	/* VSYNC & HSYNC polarity */
+  	/*__raw_writel(BM_LCDIF_VDCTRL0_VSYNC_POL,
+  		     REGS_LCDIF_BASE + HW_LCDIF_VDCTRL0_SET);	
+  	__raw_writel(BM_LCDIF_VDCTRL0_HSYNC_POL,
+  		     REGS_LCDIF_BASE + HW_LCDIF_VDCTRL0_SET);*/
+  
+- 
+- 
+  	ret = mxs_lcdif_dma_init(dev, phys, memsize);
+  	if (ret)
+  		goto out;
+  
+  	mxs_lcd_set_bl_pdata(pentry->bl_data);
+  	mxs_lcdif_notify_clients(MXS_LCDIF_PANEL_INIT, pentry);
+  	return 0;
+  
+  out:
+--- 147,176 ----
+  	__raw_writel(BM_LCDIF_CTRL1_RESET, REGS_LCDIF_BASE + HW_LCDIF_CTRL1_SET);	/* high */
+  	mdelay(1);
+  
++ 	dotclk_h_wait_cnt = dot_clk->h_pulse_width + dot_clk->hb_porch;
++ 	dotclk_h_period = dotclk_h_wait_cnt + dot_clk->hf_porch + dot_clk->h_active;
++ 	dotclk_v_wait_cnt = dot_clk->v_pulse_width + dot_clk->vb_porch;
++ 	dotclk_v_period = dotclk_v_wait_cnt + dot_clk->vf_porch + dot_clk->v_active;
++ 
++ 	setup_dotclk_panel(dot_clk->v_pulse_width, dotclk_v_period,
++ 			dotclk_v_wait_cnt, dot_clk->v_active,
++ 			dot_clk->h_pulse_width, dotclk_h_period,
++ 			dotclk_h_wait_cnt, dot_clk->h_active, 0);
+  
++ #warning TODO
+  	/* VSYNC & HSYNC polarity */
+  	/*__raw_writel(BM_LCDIF_VDCTRL0_VSYNC_POL,
+  		     REGS_LCDIF_BASE + HW_LCDIF_VDCTRL0_SET);	
+  	__raw_writel(BM_LCDIF_VDCTRL0_HSYNC_POL,
+  		     REGS_LCDIF_BASE + HW_LCDIF_VDCTRL0_SET);*/
+  
+  	ret = mxs_lcdif_dma_init(dev, phys, memsize);
+  	if (ret)
+  		goto out;
+  
+  	mxs_lcd_set_bl_pdata(pentry->bl_data);
+  	mxs_lcdif_notify_clients(MXS_LCDIF_PANEL_INIT, pentry);
++ 
+  	return 0;
+  
+  out:

@@ -1,0 +1,6127 @@
+Hmm...  Looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|NOTE: this patch tion_pro28_svn2461-2834.patch was manually corrected to be
+|matched with tion-pro28_patch_freescale.tar.gz and tion-pro28_patch_svn2461.zip
+|-- asv
+|
+|Property changes on: include/linux/pmic_light.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/mc13783/core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/mc9s08dz60/core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/mc9s08dz60/pmic.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/mc34704/core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/wm8350/bl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/mc13892/core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/ltc3589/core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mfd/max17135.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/pmic_rtc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/gpmi-nfc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/ldb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/pxp_dma.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: include/linux/mxc_pf.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: scripts/basic/docproc
+|===================================================================
+|Cannot display: file marked as a binary type.
+|svn:mime-type = application/octet-stream
+|Index: scripts/basic/fixdep
+|===================================================================
+|Cannot display: file marked as a binary type.
+|svn:mime-type = application/octet-stream
+|Index: scripts/basic/hash
+|===================================================================
+|Cannot display: file marked as a binary type.
+|svn:mime-type = application/octet-stream
+|Index: scripts/kconfig/conf
+|===================================================================
+|Cannot display: file marked as a binary type.
+|svn:mime-type = application/octet-stream
+|Index: sound/soc/mxs/mxs-dai.c
+|===================================================================
+|--- sound/soc/mxs/mxs-dai.c	(revision 2461)
+|+++ sound/soc/mxs/mxs-dai.c	(revision 2840)
+--------------------------
+Patching file sound/soc/mxs/mxs-dai.c using Plan A...
+Hunk #1 succeeded at 209.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: sound/soc/mxs/mxs-dai.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-pcm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-devb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-spdif-dai.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-dai.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-devb-spdif.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-pcm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-spdif-dai.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/soc/mxs/mxs-adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/arm/mxc-alsa-pmic.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/arm/mxc-alsa-common.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/arm/mxc-alsa-pmic.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/arm/mxc-alsa-mixer.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: sound/arm/mxc-alsa-spdif.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: localversion
+|===================================================================
+|--- localversion	(revision 0)
+|+++ localversion	(revision 2840)
+--------------------------
+Patching file localversion using Plan A...
+Hunk #1 succeeded at 1.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: localversion
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: mm/ashmem.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: Documentation/imx_nfc.txt
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: Documentation/networking/ixgbevf.txt
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: firmware/imx/epdc_E97_V110.fw.ihex
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: firmware/imx/epdc_E60_V110.fw.ihex
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: firmware/imx/epdc_E60_V220.fw.ihex
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/zq_calib.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/iram.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/dptc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/snoop.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/usb_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_scc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/dvfs_dptc_struct.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_vpu.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_timer.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mx5x.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_dptc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/fsl_usb_gadget.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/arc_otg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/sdma.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/sdram_autogating.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/board-mx35_3ds.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/iomux-mx53.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/pcmcia.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/fsl_usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/pmic_convity.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/pmic_power.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/devices-common.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_edid.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_uart.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_pm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/audio_controls.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_iim.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/hw_events.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/pmic_audio.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_dvfs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/mxc_gpc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/dmaengine.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/iomux-mx50.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/dptc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/dma.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/include/mach/3ds_debugboard.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/cpufreq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/usb_wakeup.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/io.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/3ds_debugboard.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/ahci_sata.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/isp1301xc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/mc13783_xc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/cpu_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/isp1504xc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-flexcan.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-imx-uart.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-imx-mmc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-mxc_nand.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-imx-i2c.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/platform-spi_imx.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/devices/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiMiddle.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiHigh.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiLow.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiOS.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiMiddleMcu.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiLowMcu.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/src/iapiDefaults.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/epm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiMiddle.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiHigh.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiLow.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiOS.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiMiddleMcu.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiLowMcu.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/sdmaStruct.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/iapi/include/iapiDefaults.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/sdma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/dma_sdma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/sdma_malloc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/sdma/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/dvfs_per.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/utmixc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/serialxc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxc/dvfs_core.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/lradc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/dmaengine.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/iram.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/core.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/dma-apbx.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/clock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/regs-apbx.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/unique-id.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/usb_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/icoll.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/system.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/lradc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/timex.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/dmaengine.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/clock.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/power.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/hardware.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/fsl_usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/vmalloc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/gpio.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/uncompress.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/device.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/debug-macro.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/unique-id.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/ddi_bc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/bus_freq.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/io.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/memory.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/clkdev.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/fsl_usb_gadget.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/pinctrl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/entry-macro.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/arc_otg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/include/mach/irqs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/usb_wakeup.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/regs-icoll.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/cpufreq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/timer-nomatch.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/utmixc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/dma-apbh.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/timer-match.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/pinctrl.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/plat-mxs/regs-usbphy.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/dma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/pm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/dptc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/entry-pm.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_3ds-irq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx3x-dma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_3ds_pesudo_irq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_3ds_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/dvfs-imx35.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/iomux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/dummy_gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mach-mx35_3ds.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx3_3ds_pmic_mc13783.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_3ds_pmic_mc9s08dz60.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/system.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx31_sdma_script_code_v1.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/devices-imx31.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx31_sdma_script_code_v2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_sdma_script_code_v1.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/devices-imx35.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx3/mx35_sdma_script_code_v2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/usb_h1.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/usb_h2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx53_ard_pmic_ltc3589.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/dmaengine.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/sdram_autogating.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_pins.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_rdp_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/dma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/suspend.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_3stack.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/dummy_gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/dma-apbh.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_arm2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_babbage_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_babbage.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/regs-apbh.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_wfi.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/dma-apbh.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/serial.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_3stack_gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/sdma_script_code_mx50.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/sdma_script_code_mx51.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx53_ard.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/sdma_script_code_mx53.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/serial.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/system.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/clock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/early_setup.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_rdp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx53_evk_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx51_3stack_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/iomux.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx53_evk.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/lpmodes.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/clock_mx50.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/wfi.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/iomux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/bus_freq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_arm2_pmic_mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_suspend.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/pm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/usb_dr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx5/mx50_ddr_freq.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx5_updater_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx25_3stack_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/configs/tion-pro28_defconfig
+|===================================================================
+|--- arch/arm/configs/tion-pro28_defconfig	(revision 0)
+|+++ arch/arm/configs/tion-pro28_defconfig	(revision 2840)
+--------------------------
+Patching file arch/arm/configs/tion-pro28_defconfig using Plan A...
+Hunk #1 succeeded at 1.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/configs/imx23evk_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx28evk_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx25_updater_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/mx3_updater_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx23evk_updater_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx28evk_updater_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/configs/imx5_defconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/regs-digctl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/pinctrl.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/pm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/sleep.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/regs-pinctrl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/usb_dr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/serial.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/regs-dram.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/mx23_pins.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/sleep.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/mx23evk_pins.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/emi.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/clock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/power.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/Makefile.boot
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/mx23evk.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/regs-clkctrl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/emi.inc
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/otp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/mx23.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-power.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-pwm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/dma.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-ssp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regulator.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-pxp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-apbh.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-emi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-i2c.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-timrot.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/irqs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-lcdif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/lcdif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-ocotp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-lradc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-audioin.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-rtc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/include/mach/regs-audioout.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/mx23evk.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/device.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx23/bus_freq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/pm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/usb_dr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/serial.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/mx25_3stack_gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/usb_h2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/system.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/serial.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/cpu.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/mx25_pins.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/mx25_3stack_pmic_mc34704.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/board-mx25_3stack.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/iomux.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/dma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/mx25_3stack.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/mx25_3stack_cpld.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/iomux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/crm_regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/bus_freq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx25/sdma_script_code.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/regs-dram.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/sleep.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/emi.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/emi_settings.c
+|===================================================================
+|--- arch/arm/mach-mx28/emi_settings.c	(revision 2461)
+|+++ arch/arm/mach-mx28/emi_settings.c	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/emi_settings.c using Plan A...
+Hunk #1 succeeded at 40.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/emi_settings.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/clock.c
+|===================================================================
+|--- arch/arm/mach-mx28/clock.c	(revision 2461)
+|+++ arch/arm/mach-mx28/clock.c	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/clock.c using Plan A...
+Hunk #1 succeeded at 88.
+Hunk #2 succeeded at 99.
+Hunk #3 succeeded at 115.
+Hunk #4 succeeded at 760.
+Hunk #5 succeeded at 1006.
+Hunk #6 succeeded at 1082.
+Hunk #7 succeeded at 1098.
+Hunk #8 succeeded at 1114.
+Hunk #9 succeeded at 1130.
+Hunk #10 succeeded at 1177.
+Hunk #11 succeeded at 1195.
+Hunk #12 succeeded at 1288.
+Hunk #13 succeeded at 1436.
+Hunk #14 succeeded at 1445.
+Hunk #15 succeeded at 1468.
+Hunk #16 succeeded at 1500.
+Hunk #17 succeeded at 1542.
+Hunk #18 succeeded at 1569.
+Hunk #19 succeeded at 1610.
+Hunk #20 succeeded at 1619.
+Hunk #21 succeeded at 1629.
+Hunk #22 succeeded at 1639.
+Hunk #23 succeeded at 1649.
+Hunk #24 succeeded at 1658.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/clock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/power.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/mx28_pins.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/mx28evk_pins.c
+|===================================================================
+|--- arch/arm/mach-mx28/mx28evk_pins.c	(revision 2461)
+|+++ arch/arm/mach-mx28/mx28evk_pins.c	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/mx28evk_pins.c using Plan A...
+Hunk #1 succeeded at 86.
+Hunk #2 succeeded at 95.
+Hunk #3 succeeded at 104.
+Hunk #4 succeeded at 113.
+Hunk #5 succeeded at 144.
+Hunk #6 succeeded at 153.
+Hunk #7 succeeded at 162.
+Hunk #8 succeeded at 171.
+Hunk #9 succeeded at 187.
+Hunk #10 succeeded at 197.
+Hunk #11 succeeded at 267.
+Hunk #12 succeeded at 279.
+Hunk #13 succeeded at 448.
+Hunk #14 succeeded at 496.
+Hunk #15 succeeded at 505.
+Hunk #16 succeeded at 589.
+Hunk #17 succeeded at 629.
+Hunk #18 succeeded at 658.
+Hunk #19 succeeded at 674.
+Hunk #20 succeeded at 895.
+Hunk #21 succeeded at 1016.
+Hunk #22 succeeded at 1328.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/mx28evk_pins.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/usb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/Makefile.boot
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/device.c
+|===================================================================
+|--- arch/arm/mach-mx28/device.c	(revision 2461)
+|+++ arch/arm/mach-mx28/device.c	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/device.c using Plan A...
+Hunk #1 succeeded at 434.
+Hunk #2 succeeded at 469.
+Hunk #3 succeeded at 506.
+Hunk #4 succeeded at 530.
+Hunk #5 succeeded at 670.
+Hunk #6 succeeded at 679.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/emi_settings.h
+|===================================================================
+|--- arch/arm/mach-mx28/emi_settings.h	(revision 2461)
+|+++ arch/arm/mach-mx28/emi_settings.h	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/emi_settings.h using Plan A...
+Hunk #1 succeeded at 27.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/emi_settings.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/regs-clkctrl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-ocotp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-lradc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-rtc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-power.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/mx28.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-icoll.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/dma.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-pwm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-ssp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regulator.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-pxp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-apbh.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-i2c.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-timrot.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/regs-lcdif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/include/mach/lcdif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: arch/arm/mach-mx28/mx28evk.c
+|===================================================================
+|--- arch/arm/mach-mx28/mx28evk.c	(revision 2461)
+|+++ arch/arm/mach-mx28/mx28evk.c	(revision 2840)
+--------------------------
+Patching file arch/arm/mach-mx28/mx28evk.c using Plan A...
+Hunk #1 succeeded at 83.
+Hunk #2 succeeded at 115.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: arch/arm/mach-mx28/mx28evk.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/device.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/bus_freq.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/mx28evk.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/regs-digctl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/pinctrl.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/pm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/sleep.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/regs-pinctrl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/usb_dr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/serial.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/mach-mx28/usb_h1.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: arch/arm/include/asm/mach/keypad.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/binder.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/logger.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/binder.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/lowmemorykiller.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/staging/android/logger.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/dma/pxp/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/dma/pxp/pxp_device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/dma/pxp/pxp_dma.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/dma/pxp/regs-pxp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/reg-mc34704.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/ltc3589-regulator.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/reg-mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/max17135-regulator.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/mxs-regulator.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/reg-mc13783.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/regulator/reg-mc9s08dz60.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/mxc_iim.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/mxs_viim.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/hw_random/fsl-rnga.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/hw_random/fsl-rngc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/imx_sim.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/regs-ocotp-v2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/fsl_otp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/fsl_otp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/char/mxc_si4702.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/crypto/dcp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/crypto/dcp_bootstream_ioctl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/crypto/dcp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_device.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/mxc_i2c_slave.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_core.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_ring_buffer.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/mxc_i2c_slave_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/mxc_i2c_slave.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_ring_buffer.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c-slave/i2c_slave_client.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/fec_1588.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/fec_1588.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/imx_ptp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/imx_ptp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/net/fec.c
+|===================================================================
+|--- drivers/net/fec.c	(revision 2461)
+|+++ drivers/net/fec.c	(revision 2840)
+--------------------------
+Patching file drivers/net/fec.c using Plan A...
+Hunk #1 succeeded at 1274.
+Hunk #2 succeeded at 1417.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: drivers/net/fec_switch.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/fec_switch.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/irda/mxc_ir.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/irda/mxc_ir.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/can/flexcan/flexcan.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/can/flexcan/drv.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/can/flexcan/mbm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/can/flexcan/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/can/flexcan/dev.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/ar6k_events.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/ar6k.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/ar6k_gmbox_hciuart.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/ar6k_gmbox.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/AR6000/ar6k.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc_send.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc_debug.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc_recv.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc_internal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/htc2/htc_services.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/ar6000_raw_if.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/hci_bridge.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/export_hci_transport.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/ieee80211_ioctl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/athtypes_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/export_hci_transport.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/wmi_filter_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/ar6000_drv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/config_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/debug_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/wlan_config.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/athdrv_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/ar6xapi_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/osapi_linux.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/include/cfg80211.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/ar6000_drv.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/netbuf.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/eeprom.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/ar6000_android.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/ioctl.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/cfg80211.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/os/linux/wireless_ext.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/src/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/src/wlan_utils.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/src/wlan_node.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/src/wlan_recv_beacon.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/include/ieee80211_node.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wlan/include/ieee80211.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/reorder/aggr_rx_internal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/reorder/rcv_aggr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/reorder/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/htc_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/athbtfilter.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/hci_transport_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/targaddrs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dsetid.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/cnxmgmt.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/bmi_msg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wmi_thin.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/htc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/epping_test.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/htc_services.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/host_version.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wmix.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dset_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/athstartpack.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dl_list.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/gmboxif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dset_internal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/pkt_log.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/athendpack.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/btcoexGpio.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_types.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_config.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/hif.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/bmi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/discovery.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dbglog_id.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_osapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/athdefs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wlan_dset.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/AR6K_version.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/si_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/uart_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/gpio_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/analog_intf_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/analog_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/apb_map.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/mbox_host_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/mbox_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/vmc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw/rtc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/rtc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/si_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/uart_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/gpio_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/analog_intf_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/analog_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/apb_map.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/mbox_host_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/mbox_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw2.0/hw/vmc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/rtc_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/si_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/uart_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/umbox_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/analog_intf_athr_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mac_dma_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/analog_intf_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mbox_wlan_host_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/rdma_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/vmc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mbox_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/rtc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/umbox_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/analog_intf_ares_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/gpio_athr_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/gpio_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/apb_athr_wlan_map.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/bb_lc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/apb_map.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mbox_host_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mbox_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/vmc_wlan_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/mac_pcu_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/hw4.0/hw/efuse_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/AR6002_regdump.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/AR6002/addrs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_drv_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wmi_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/ar3kconfig.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_debug.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dbglog_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/gpio_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/aggr_recv_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/target_reg_table.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wlan_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_drv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/ar6000_diag.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/ar6kap_common.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/roaming.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wmi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/ini_dset.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/gpio.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/dbglog.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/ar6000_api.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/wlan_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/common_drv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/a_hci.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/regdump.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/testcmd.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/include/htc_packet.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/common/hif_sdio_common.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/sdio/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/sdio/linux_sdio/src/hif.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/sdio/linux_sdio/src/hif_scatter.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/sdio/linux_sdio/include/hif_internal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/hif/sdio/linux_sdio/nativemmcstack_readme.txt
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/bmi/include/bmi_internal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/bmi/src/bmi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/bmi/src/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/miscdrv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/credit_dist.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/ar3kps/ar3kpsconfig.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/ar3kps/ar3kpsparser.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/ar3kps/ar3kpsparser.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/ar3kps/ar3kpsconfig.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/common_drv.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/miscdrv/ar3kconfig.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wmi/wmi_host.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wmi/makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/wmi/wmi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/net/wireless/ath6kl/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/leds/leds-mxs-pwm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/leds/leds-mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/hwmon/mxc_mma7450.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/hwmon/max17135-hwmon.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/hwmon/isl29003.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/otg/fsl_otg.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/otg/otg_fsm.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/otg/fsl_otg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/otg/otg_fsm.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/fsl_updater.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/arcotg_udc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/stmp_updater.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/stmp_updater.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/fsl_updater.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/gadget/arcotg_udc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/host/ehci-q-iram.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/host/ehci-mem-iram.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/usb/host/ehci-arc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/ata/pata_fsl.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/idle/intel_idle.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/i2c-mxs.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/mxc_i2c_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/i2c-mxs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/mxc_i2c_hs.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/mxc_i2c_hs_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/i2c/busses/mxc_i2c.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/regs-duart.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/mxs-duart.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/mxc_uart_early.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/mxc_uart.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/mxs-auart.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/mxc_uart_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/serial/regs-uartapp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/rotate270_u16.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/rotate90_u16.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/hmirror_rotate180_u16.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/rotate270_u16_qcif.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/rotate90_u16_qcif.S
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/opl_mod.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/vmirror_u16.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/opl/opl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/mx31_v4l2_wvga_output.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/mxc_v4l2_output.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/mxc_pxp_v4l2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/mxc_pxp_v4l2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/mxc_v4l2_output.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/output/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_prp_vf_sdc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_prp_enc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_still.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/csi_v4l2_capture.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_prp_vf_sdc_bg.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_prp_vf_adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_csi_enc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/mxc_v4l2_capture.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/fsl_csi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/mt9v111.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/sensor_clock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/mxc_v4l2_capture.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/fsl_csi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/mt9v111.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/adv7180.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ipu_prp_sw.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ov2640.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxc/capture/ov3640.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxs_pxp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/mxs_pxp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/pxp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/media/video/pxp.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/maps/mxc_nor.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/mxc_nd2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/nand_device_info.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-event-reporting.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-hal-v1.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-hal-v2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-hal-common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/mtd/nand/gpmi-nfc/gpmi-nfc.h
+|===================================================================
+|--- drivers/mtd/nand/gpmi-nfc/gpmi-nfc.h	(revision 2461)
+|+++ drivers/mtd/nand/gpmi-nfc/gpmi-nfc.h	(revision 2840)
+--------------------------
+Patching file drivers/mtd/nand/gpmi-nfc/gpmi-nfc.h using Plan A...
+Hunk #1 succeeded at 58.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-rom-v0.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-rom-v1.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-mil.c
+|===================================================================
+|--- drivers/mtd/nand/gpmi-nfc/gpmi-nfc-mil.c	(revision 2461)
+|+++ drivers/mtd/nand/gpmi-nfc/gpmi-nfc-mil.c	(revision 2840)
+--------------------------
+Patching file drivers/mtd/nand/gpmi-nfc/gpmi-nfc-mil.c using Plan A...
+Hunk #1 succeeded at 1092.
+Hunk #2 succeeded at 1131.
+Hunk #3 succeeded at 1146.
+Hunk #4 succeeded at 1175.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-mil.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-bch-regs-v0.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-gpmi-regs-v0.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-bch-regs-v1.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-gpmi-regs-v1.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-rom-common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-bch-regs-v2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-gpmi-regs-v2.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-main.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/gpmi-nfc/gpmi-nfc-hal-v0.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/nand_device_info.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/imx_nfc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/mxc_nd.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/mxc_nd.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/nand/mxc_nd2.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/devices/mxc_dataflash.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mtd/ubiblock.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/w1/slaves/w1_ds2751.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/w1/slaves/w1_ds2438.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/w1/slaves/w1_ds2438.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hw_event/mxc_hw_event.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hw_event/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hw_event/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_ic.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_prv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_disp.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_capture.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_param_mem.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_calc_stripes_sizes.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu3/ipu_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/adc/imx_adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/adc/imx_adc_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/adc/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/adc/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/asrc/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/asrc/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/asrc/mxc_asrc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_convity.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_power.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_adc_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_light_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_rtc_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_battery_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_audio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_power_defs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_light.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_rtc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13783/pmic_battery.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13892/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13892/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13892/pmic_adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13892/pmic_light.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/mc13892/pmic_battery.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/mc34704.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic-dev.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/mc13783.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/mc13892.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic_event.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic_external.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic_core_spi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic_core_i2c.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/pmic/core/pmic_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/os/kernel/include/kos_libapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/os/kernel/src/linux/kos_lib.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/os/include/os_types.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_klibapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_properties.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_displayapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_libapi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_utils.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_types.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/api/gsl_pm4types.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_cmdstream.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_log.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_enum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_struct.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_offset.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_genreg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_registers.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_mask.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_shift.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_genenum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_random.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamato_typedef.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/10/yamatoix.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_enum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_struct.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_offset.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_genreg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_registers.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_mask.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_ipt.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_shift.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_genenum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_random.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/22/yamato_typedef.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_ipt.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_shift.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_genenum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_random.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_typedef.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_enum.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_struct.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_offset.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_genreg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_registers.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato/14/yamato_mask.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/g12_reg.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/vgc/vgenums_z160.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/vgc/vgregs_z160.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/reg/yamato.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_intrmgr.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_memmgr.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_context.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_buildconfig.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_debug.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_ringbuffer.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_halconfig.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_tbdump.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_cmdwindow.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_driver.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_mmu.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_device.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_drawctxt.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_hal.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_display.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_config.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_sharedmem.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/include/gsl_ioctl.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_hwaccess.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_kmod_cleanup.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/misc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_kmod.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_linux_map.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_kmod_cleanup.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_linux_map.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/platform/hal/linux/gsl_hal.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_sharedmem.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_debug_pm4.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/pm4_microcode.inl
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_cmdstream.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_log.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_intrmgr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_context.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_memmgr.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/pfp_microcode_nrt.inl
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_g12.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_ringbuffer.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_yamato.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_cmdwindow.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_driver.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_tbdump.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_mmu.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/common/gsl_drawctxt.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/amd-gpu/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/max8660.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/mcu_pmic_core.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/mcu_pmic_gpio.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/mc9s08dz60.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/max8660.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/mcu_pmic_core.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mcu_pmic/mc9s08dz60.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_param_mem.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_adc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/pf/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/pf/mxc_pf.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/pf/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_calc_stripes_sizes.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_common.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_sdc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_ic.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_prv.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_csi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ipu/ipu_device.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/registers.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/ssi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/ssi.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/ssi/ssi_types.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/dam/dam.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/dam/dam_v1.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/dam/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/dam/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/dam/dam.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/gps_ioctrl/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/gps_ioctrl/agpsgpiodev.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/gps_ioctrl/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/gps_ioctrl/agpsgpiodev.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/bt/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/bt/mxc_bt.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/bt/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/scc2_internals.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/dryice.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/mxc_scc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_queue.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/km_adaptor.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_interrupt_handler.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_auth.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_keystore.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_hmac.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_sym.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_wrap.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_driver_common.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sahara.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/platform_abstractions.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/linux_port.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/fsl_shw.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sf_util.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_memory_mapper.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_hardware_interface.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_status_manager.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/portable_os.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_queue_manager.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_kernel.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sahara2_kernel.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/diagnostic.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/sah_interrupt_handler.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/fsl_platform.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/adaptor.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/include/fsl_shw_keystore.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_user.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sf_util.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_driver_interface.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_memory_mapper.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_hardware_interface.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_hash.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_status_manager.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/fsl_shw_rand.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/sahara2/sah_queue_manager.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/dryice-regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/mxc_scc_internals.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/dryice.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/rng_driver.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/shw_hmac.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/shw_driver.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/rng_rnga.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/rng_rngc.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/shw_internals.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/rng_driver.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/shw_hash.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/include/rng_internals.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/des_key.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/shw_hash.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/fsl_shw_hash.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/fsl_shw_rand.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/shw_hmac.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/shw_driver.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/fsl_shw_hmac.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/fsl_shw_sym.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/shw_memory_mapper.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/fsl_shw_wrap.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/rng/shw_dryice.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/security/scc2_driver.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/vpu/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/vpu/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/vpu/mxc_vl2cc.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/vpu/mxc_vpu.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mlb/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mlb/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/mlb/mxc_mlb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hmp4e/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hmp4e/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hmp4e/mxc_hmp4e.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/mxc/hmp4e/mxc_hmp4e.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/spi/spi_mxs.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/spi/spi_mxs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/spi/mxc_spi.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/keyboard/mxc_pwrkey.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/keyboard/mxs-kbd.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/keyboard/mpr084.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/keyboard/mxc_keyb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/keyboard/mc9s08dz60_keyb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/touchscreen/mxc_ts.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/input/touchscreen/mxs-ts.c
+|===================================================================
+|--- drivers/input/touchscreen/mxs-ts.c	(revision 2461)
+|+++ drivers/input/touchscreen/mxs-ts.c	(revision 2840)
+--------------------------
+Patching file drivers/input/touchscreen/mxs-ts.c using Plan A...
+Hunk #1 succeeded at 203.
+Hunk #2 succeeded at 279.
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: drivers/input/touchscreen/mxs-ts.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/input/touchscreen/imx_adc_ts.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/watchdog/mxs-wdt.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/watchdog/mxc_wdt.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/watchdog/mxc_wdt.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/tve.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_epson_vga.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/epdc_regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/ldb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_claa_wvga.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_epson.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxc_elcdif_fb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/ch7024.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_modedb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/elcdif_regs.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxc_edid.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_seiko_wvga.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mx2fb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_sii9022.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mx2fb.h
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxc_ipuv3_fb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxcfb_ch7026.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/mxc_epdc_fb.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxc/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/video/mxs/lcd_tionpro28.c
+|===================================================================
+|--- drivers/video/mxs/lcd_tionpro28.c	(revision 2461)
+|+++ drivers/video/mxs/lcd_tionpro28.c	(revision 2840)
+--------------------------
+Patching file drivers/video/mxs/lcd_tionpro28.c using Plan A...
+Hunk #1 succeeded at 1.
+Hunk #2 succeeded at 121.
+Hunk #3 FAILED at 147.
+Hunk #4 succeeded at 188 (offset 8 lines).
+Hunk #5 succeeded at 210 (offset 8 lines).
+Hunk #6 succeeded at 229 (offset 8 lines).
+Hunk #7 succeeded at 243 (offset 8 lines).
+Hunk #8 succeeded at 268 (offset 8 lines).
+Hunk #9 succeeded at 329 (offset 8 lines).
+1 out of 9 hunks FAILED -- saving rejects to file drivers/video/mxs/lcd_tionpro28.c.rej
+Hmm...  The next patch looks like a unified diff to me...
+The text leading up to this was:
+--------------------------
+|
+|Property changes on: drivers/video/mxs/lcd_tionpro28.c
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxs/Makefile
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|
+|Property changes on: drivers/video/mxs/Kconfig
+|___________________________________________________________________
+|Deleted: svn:executable
+|   - *
+|
+|Index: drivers/video/mxs/mxsfb.c
+|===================================================================
+|--- drivers/video/mxs/mxsfb.c	(revision 2461)
+|+++ drivers/video/mxs/mxsfb.c	(revision 2840)
+--------------------------
+Patching file drivers/video/mxs/mxsfb.c using Plan A...
+Hunk #1 succeeded at 44.
+Hmm...  Ignoring the trailing garbage.
+done
