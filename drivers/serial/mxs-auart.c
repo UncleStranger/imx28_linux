@@ -898,6 +898,28 @@ static void mxs_auart_enable_ms(struct uart_port *port)
 	/* just empty */
 }
 
+static int mxs_auart_ioctl(struct uart_port *u, unsigned int cmd, unsigned long arg)
+{
+	struct mxs_auart_port *s = to_auart_port(u);
+
+	switch(cmd){
+	
+		case TIOCSRS485: //Set port Mode			
+			if ((UART_MODE_NONE==arg) || (UART_MODE_RS232==arg) || (UART_MODE_RS485==arg) || (UART_MODE_RS422==arg)){
+				s->mode = arg;
+				mxs_auart_set_mode(s);				
+				}			
+			break;
+
+		default:
+			return -ENOIOCTLCMD;
+			break;  
+    			
+	}
+	return 0;
+	
+}
+
 static struct uart_ops mxs_auart_ops = {
 	.tx_empty       = mxs_auart_tx_empty,
 	.start_tx       = mxs_auart_start_tx,
@@ -913,6 +935,7 @@ static struct uart_ops mxs_auart_ops = {
 	.type	   	= mxs_auart_type,
 	.release_port   = mxs_auart_release_port,
 	.request_port   = mxs_auart_request_port,
+	.ioctl		= mxs_auart_ioctl,
 	.config_port    = mxs_auart_config_port,
 	.verify_port    = mxs_auart_verify_port,
 };
