@@ -808,8 +808,8 @@ static int h_set_rate(struct clk *clk, unsigned long rate)
 	if ((div == 0) || (div >= 0x20))
 		return -EINVAL;
 
-	if (root_rate % round_rate)
-			return -EINVAL;
+//	if (root_rate % round_rate)
+//			return -EINVAL;
 
 	if ((root_rate < rate) && (root_rate == 64000000))
 		div = 3;
@@ -1295,7 +1295,7 @@ static struct clk dis_lcdif_clk = {
 	.busy_reg = CLKCTRL_BASE_ADDR + HW_CLKCTRL_DIS_LCDIF,
 	.busy_bits = 29,
 	.enable_reg = CLKCTRL_BASE_ADDR + HW_CLKCTRL_DIS_LCDIF,
-	.enable_bits = 31,
+	.enable_bits = BM_CLKCTRL_DIS_LCDIF_CLKGATE,//31,
 	.bypass_reg = CLKCTRL_BASE_ADDR + HW_CLKCTRL_CLKSEQ,
 	.bypass_bits = 14,
 	.get_rate = lcdif_get_rate,

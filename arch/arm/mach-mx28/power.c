@@ -251,7 +251,11 @@ static struct mxs_platform_regulator_data vddio_data = {
 	.set_mode	= set_mode,
 	.get_mode	= get_mode,
 	.control_reg	= (u32)(REGS_POWER_BASE + HW_POWER_VDDIOCTRL),
+#if defined(CONFIG_FSL_OTP)
+	.min_voltage	= 2700000 + MX28EVK_VDDIO_OFFSET,
+#else
 	.min_voltage	= 2800000 + MX28EVK_VDDIO_OFFSET,
+#endif
 	.max_voltage	= 3600000 + MX28EVK_VDDIO_OFFSET,
 };
 
@@ -302,7 +306,11 @@ static struct regulator_init_data vdda_init = {
 static struct regulator_init_data vddio_init = {
 	.constraints = {
 		.name			= "vddio",
+#if defined(CONFIG_FSL_OTP)
+		.min_uV			= 2700000 + MX28EVK_VDDIO_OFFSET,
+#else
 		.min_uV			= 2800000 + MX28EVK_VDDIO_OFFSET,
+#endif
 		.max_uV			= 3600000 + MX28EVK_VDDIO_OFFSET,
 		.valid_modes_mask	= REGULATOR_MODE_FAST |
 					  REGULATOR_MODE_NORMAL,

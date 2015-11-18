@@ -133,6 +133,10 @@ struct mxs_spi_platform_data {
 	char *clk;
 };
 
+struct mxs_wdt_platform_data {
+	int gpio;	
+};
+
 struct mxs_audio_platform_data {
 	int intr_id_hp;
 	int ext_ram;

@@ -733,6 +733,13 @@ static void mx28_init_spi(void)
 #endif
 
 #if defined(CONFIG_MXS_WATCHDOG) || defined(CONFIG_MXS_WATCHDOG_MODULE)
+#if defined(CONFIG_MXS_WATCHDOG_GPIO) 
+#define GPIO_WDI MXS_PIN_TO_GPIO(PINID_JTAG_RTCK)
+#endif
+static struct mxs_wdt_platform_data wdt_data = {
+	.gpio = -1,	
+};
+
 static struct resource mx28_wdt_res = {
 	.flags = IORESOURCE_MEM,
 	.start = RTC_PHYS_ADDR,
@@ -747,6 +754,20 @@ static void __init mx28_init_wdt(void)
 		return;
 	pdev->resource = &mx28_wdt_res;
 	pdev->num_resources = 1;
+	
+#if defined(CONFIG_MXS_WATCHDOG_GPIO) 	
+	/* Configure WDI pin as gpio */
+	int ret = gpio_request(GPIO_WDI, "wdt_gpio");
+	if (ret)		
+		goto add_device;
+		
+	wdt_data.gpio=GPIO_WDI;
+	gpio_direction_output(GPIO_WDI, 0);	
+	//mdelay(100);
+#endif
+	
+add_device:
+	pdev->dev.platform_data = &wdt_data;	
 	mxs_add_device(pdev, 3);
 }
 #else
@@ -837,7 +858,7 @@ static void __init mx28_init_fec(void)
 	struct mxs_dev_lookup *lookup;
 	struct fec_platform_data *pfec;
 	int i;
-	u32 val;
+	u32 val[2];
 
 	__raw_writel(BM_OCOTP_CTRL_RD_BANK_OPEN,
 			IO_ADDRESS(OCOTP_PHYS_ADDR) + HW_OCOTP_CTRL_SET);
@@ -852,8 +873,10 @@ static void __init mx28_init_fec(void)
 
 	for (i = 0; i < lookup->size; i++) {
 		pdev = lookup->pdev + i;
-		val =  __raw_readl(IO_ADDRESS(OCOTP_PHYS_ADDR) +
-						HW_OCOTP_CUSTn(pdev->id));
+		val[0] =  __raw_readl(IO_ADDRESS(OCOTP_PHYS_ADDR) +
+						HW_OCOTP_CUSTn(0));
+		val[1] =  __raw_readl(IO_ADDRESS(OCOTP_PHYS_ADDR) +
+						HW_OCOTP_CUSTn(1));
 		switch (pdev->id) {
 		case 0:
 			pdev->resource = fec0_resource;
@@ -870,12 +893,12 @@ static void __init mx28_init_fec(void)
 		}
 
 		pfec = (struct fec_platform_data *)pdev->dev.platform_data;
-		pfec->mac[0] = 0x00;
-		pfec->mac[1] = 0x04;
-		pfec->mac[2] = (val >> 24) & 0xFF;
-		pfec->mac[3] = (val >> 16) & 0xFF;
-		pfec->mac[4] = (val >> 8) & 0xFF;
-		pfec->mac[5] = (val >> 0) & 0xFF;
+		pfec->mac[0] = (val[0] >> 24) & 0xFF;
+		pfec->mac[1] = (val[0] >> 16) & 0xFF;
+		pfec->mac[2] = (val[0] >> 8) & 0xFF;
+		pfec->mac[3] = (val[0] >> 0) & 0xFF;
+		pfec->mac[4] = (val[1] >> 8) & 0xFF;
+		pfec->mac[5] = (val[1] >> 0) & 0xFF;
 
 		mxs_add_device(pdev, 2);
 	}

@@ -236,6 +236,15 @@ config MXS_WATCHDOG
 	  for the Freescale mxs family SoC.
 	  To compile this driver as a module, choose M here: the
 	  module will be called mxs_wdt.
+	 
+config MXS_WATCHDOG_GPIO
+	tristate "GPIO-base watchdog form mxs"
+	depends on ARCH_MXS && MXS_WATCHDOG
+	help
+	  Say Y here if to include support for the GPIO-based watchdog timer
+	  for the Freescale mxs family SoC.
+	  To compile this driver as a module, choose M here: the
+	  module will be called mxs_wdt.
 
 config IOP_WATCHDOG
 	tristate "IOP Watchdog"

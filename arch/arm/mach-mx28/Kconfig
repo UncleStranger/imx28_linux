@@ -8,6 +8,10 @@ config MACH_MX28EVK
 
 endchoice
 
+config MXS_ORION28
+	bool "ZEO MX28 ORION28 board"
+	depends on ARCH_MX28	
+
 config VECTORS_PHY_ADDR
 	int "vectors address"
 	default 0

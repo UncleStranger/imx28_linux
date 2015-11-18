@@ -82,7 +82,7 @@ static int otp_write_prepare(struct fsl_otp_data *otp_data)
 	int err = 0;
 
 	/* [1] HCLK to 24MHz. */
-	hclk = clk_get(NULL, "hclk");
+	hclk = clk_get(NULL, "h");
 	if (IS_ERR(hclk)) {
 		err = PTR_ERR(hclk);
 		goto out;
@@ -99,7 +99,7 @@ static int otp_write_prepare(struct fsl_otp_data *otp_data)
 	   You are warned now.
 	 */
 	otp_hclk_saved = clk_get_rate(hclk);
-	clk_set_rate(hclk, 24000);
+	clk_set_rate(hclk, 24000000);
 
 	/* [2] The voltage is set to 2.8V */
 	regu = regulator_get(NULL, otp_data->regulator_name);
@@ -116,7 +116,7 @@ static int otp_write_post(void)
 {
 	struct clk *hclk;
 
-	hclk = clk_get(NULL, "hclk");
+	hclk = clk_get(NULL, "h");
 
 	/* restore the clock and voltage */
 	clk_set_rate(hclk, otp_hclk_saved);

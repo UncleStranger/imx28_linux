@@ -59,6 +59,7 @@
 #define UART_MODE_RS422 3
 
 // temporary define pins as digital numbers
+#ifndef CONFIG_MXS_ORION28
 #define GPIO_PORT1_RS232_OFF 	64+12//PINID_SSP1_SCK
 #define GPIO_PORT1_RS485_DE 	64+13//PINID_SSP1_CMD
 #define GPIO_PORT1_RS485_RE	64+14//PINID_SSP1_DATA0
@@ -68,6 +69,15 @@
 #define GPIO_PORT2_RS485_DE	64+5//PINID_SSP0_DATA5
 #define GPIO_PORT2_RS485_RE	64+6//PINID_SSP0_DATA6
 #define GPIO_PORT2_RS422_DE	64+7//PINID_SSP0_DATA7
+#else
+#define GPIO_PORT0_RS485_DE 	64+12//PINID_SSP1_SCK
+#define GPIO_PORT0_RS485_RE	64+15//PINID_SSP1_DATA3
+#define GPIO_PORT1_RS485_DE 	64+13//PINID_SSP1_CMD
+#define GPIO_PORT1_RS485_RE	64+14//PINID_SSP1_DATA0
+#define GPIO_PORT2_RS485_DE	64+5//PINID_SSP0_DATA5
+#define GPIO_PORT2_RS485_RE	64+6//PINID_SSP0_DATA6
+
+#endif
 
 static struct uart_driver auart_driver;
 
@@ -1108,6 +1118,7 @@ static struct uart_driver auart_driver = {
 static int mxs_auart_set_mode (struct mxs_auart_port *port)
 {
 	unsigned int rs232_off, rs485_de, rs485_re, rs422_de;
+#ifndef CONFIG_MXS_ORION28
 	switch (port->port.line){
 	case 1: 
 		rs232_off = GPIO_PORT1_RS232_OFF;
@@ -1153,7 +1164,45 @@ static int mxs_auart_set_mode (struct mxs_auart_port *port)
 		break;	
 	default:;	
 	}
-	
+#else
+	switch (port->port.line){
+	case 0: 		
+		rs485_de = GPIO_PORT0_RS485_DE;
+		rs485_re = GPIO_PORT0_RS485_RE;		
+		break;
+	case 1: 		
+		rs485_de = GPIO_PORT1_RS485_DE;
+		rs485_re = GPIO_PORT1_RS485_RE;		
+		break;
+	case 2: 		
+		rs485_de = GPIO_PORT2_RS485_DE;
+		rs485_re = GPIO_PORT2_RS485_RE;		
+		break;	
+	default:
+		goto out;		
+		//return 0;
+	}
+
+	switch (port->mode){
+	case UART_MODE_NONE:		
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_de), 1);
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_re), 1);				
+		break;
+	case UART_MODE_RS232:		
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_de), 1);
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_re), 1);			
+		break;
+	case UART_MODE_RS485:		
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_de), 1);
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_re), 0);			
+		break;
+	case UART_MODE_RS422:		
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_de), 1);
+		gpio_direction_output(MXS_PIN_TO_GPIO(rs485_re), 0);					
+		break;	
+	default:;	
+	}
+#endif	
 	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs232_off, MXS_PIN_TO_GPIO(rs232_off));
 	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs485_off, MXS_PIN_TO_GPIO(rs485_off));
 out:
@@ -1166,6 +1215,12 @@ static int mxs_auart_set_rs485_de (struct mxs_auart_port *port, bool bEnable)
 {
 	unsigned int rs485_de, rs485_re;
 	switch (port->port.line){
+	case 0: 		
+#ifdef CONFIG_MXS_ORION28
+		rs485_de = GPIO_PORT0_RS485_DE;
+		rs485_re = GPIO_PORT0_RS485_RE;		
+#endif
+		break;
 	case 1: 		
 		rs485_de = GPIO_PORT1_RS485_DE;
 		rs485_re = GPIO_PORT1_RS485_RE;		
@@ -1241,8 +1296,15 @@ static int __devinit mxs_auart_probe(struct platform_device *pdev)
 	s->port.type = PORT_IMX;
 	s->port.dev = s->dev = get_device(&pdev->dev);
 
+#ifndef CONFIG_MXS_ORION28
 	if (s->port.line == 1) s->mode = UART_MODE_RS232;
 	if (s->port.line == 2) s->mode = UART_MODE_RS485;
+#else
+	if (s->port.line == 0) s->mode = UART_MODE_RS485;
+	if (s->port.line == 1) s->mode = UART_MODE_RS485;
+	if (s->port.line == 2) s->mode = UART_MODE_RS485;
+//	if (s->port.line == 3) s->mode = UART_MODE_RS485;	
+#endif
 
 	//printk(KERN_WARNING "Initializing AUART %d \r\n", s->port.line);
 	//printk(KERN_WARNING "AUART Mode: %d \r\n", (unsigned char) s->mode);

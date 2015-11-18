@@ -11,6 +11,7 @@
 #include <linux/fs.h>
 #include <linux/miscdevice.h>
 #include <linux/watchdog.h>
+#include <linux/delay.h>
 #include <linux/platform_device.h>
 #include <linux/spinlock.h>
 #include <linux/uaccess.h>
@@ -18,6 +19,8 @@
 
 #include <mach/hardware.h>
 #include <mach/regs-rtc.h>
+#include <mach/pinctrl.h>
+#include <mach/device.h>
 
 #define DEFAULT_HEARTBEAT	19
 #define MAX_HEARTBEAT		(0x10000000 >> 6)
@@ -34,6 +37,7 @@ static unsigned long wdt_status;
 static int heartbeat = DEFAULT_HEARTBEAT;
 static unsigned long boot_status;
 static unsigned long wdt_base;
+static unsigned long wdi_gpio=-1;
 static DEFINE_SPINLOCK(mxs_wdt_io_lock);
 
 static void wdt_enable(u32 value)
@@ -58,6 +62,14 @@ static void wdt_disable(void)
 static void wdt_ping(void)
 {
 	wdt_enable(heartbeat * WDOG_COUNTER_RATE);
+#if defined(CONFIG_MXS_WATCHDOG_GPIO)
+	if (wdi_gpio>0) {
+		gpio_direction_output(wdi_gpio, 0);
+		mdelay(20);
+		gpio_direction_output(wdi_gpio, 1);	
+	}
+	//printk(KERN_INFO "wdt_gpio %d\n", wdi_gpio);	
+#endif
 }
 
 static int mxs_wdt_open(struct inode *inode, struct file *file)
@@ -205,6 +217,7 @@ static int __devinit mxs_wdt_probe(struct platform_device *pdev)
 {
 	int ret = 0;
 	struct resource *res;
+	struct mxs_wdt_platform_data *plat;
 
 	if (heartbeat < 1 || heartbeat > MAX_HEARTBEAT)
 		heartbeat = DEFAULT_HEARTBEAT;
@@ -219,6 +232,8 @@ static int __devinit mxs_wdt_probe(struct platform_device *pdev)
 	boot_status = !!boot_status;
 	__raw_writel(BV_RTC_PERSISTENT1_GENERAL__RTC_FORCE_UPDATER,
 		     wdt_base + HW_RTC_PERSISTENT1_CLR);
+	plat = pdev->dev.platform_data;
+	wdi_gpio = plat->gpio;
 
 	wdt_disable();		/* disable for now */
 

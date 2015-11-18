@@ -547,6 +547,43 @@ static struct pin_desc mx28evk_fixed_pins[] = {
 	 .drive	= 1,
 	 },
 #endif
+//#ifdef CONFIG_MXS_ORION28
+#if 0
+	{
+	 .name  = "OUT1",
+	 .id	= PINID_LCD_D20,
+	 .fun	= PIN_GPIO,
+	 .strength = PAD_8MA,
+	 .voltage	= PAD_3_3V,
+	 .drive	= 1,
+	 .output = 1,
+	 },
+	{
+	 .name  = "OUT2",
+	 .id	= PINID_LCD_D21,
+	 .fun	= PIN_GPIO,
+	 .strength = PAD_8MA,
+	 .voltage	= PAD_3_3V,
+	 .drive	= 1,
+	 .output = 1,
+	 },
+	{
+	 .name  = "IN1",
+	 .id	= PINID_LCD_D22,
+	 .fun	= PIN_GPIO,
+	 .strength = PAD_8MA,
+	 .voltage	= PAD_3_3V,
+	 .drive	= 1,
+	 },
+	{
+	 .name  = "IN2",
+	 .id	= PINID_LCD_D23,
+	 .fun	= PIN_GPIO,
+	 .strength = PAD_8MA,
+	 .voltage	= PAD_3_3V,
+	 .drive	= 1,
+	 },
+#endif
 #if defined(CONFIG_MMC_MXS) || defined(CONFIG_MMC_MXS_MODULE)
 	/* Configurations of SSP0 SD/MMC port pins */
 	{
