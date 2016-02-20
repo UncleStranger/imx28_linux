@@ -217,6 +217,11 @@ static struct resource auart4_resource[] = {
 	 .start = AUART4_PHYS_ADDR,
 	 .end	= AUART4_PHYS_ADDR + 0xFFF,
 	 },
+	 {
+	 .flags = IORESOURCE_DMA,
+	 .start = MXS_DMA_CHANNEL_AHB_APBX_UART4_RX,
+	 .end = MXS_DMA_CHANNEL_AHB_APBX_UART4_RX,
+	 },
 	{
 	 .flags = IORESOURCE_DMA,
 	 .start = MXS_DMA_CHANNEL_AHB_APBX_UART4_TX,

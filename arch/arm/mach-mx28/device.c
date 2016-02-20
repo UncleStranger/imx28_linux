@@ -877,6 +877,11 @@ static void __init mx28_init_fec(void)
 						HW_OCOTP_CUSTn(0));
 		val[1] =  __raw_readl(IO_ADDRESS(OCOTP_PHYS_ADDR) +
 						HW_OCOTP_CUSTn(1));
+		if ((val[0]==0x0)&&(val[1]==0x00)){
+			val[0]=0x70B3D5A6;
+			val[1]=0x0028;
+		}
+		
 		switch (pdev->id) {
 		case 0:
 			pdev->resource = fec0_resource;

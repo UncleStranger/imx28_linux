@@ -1297,8 +1297,8 @@ static int __devinit mxs_auart_probe(struct platform_device *pdev)
 	s->port.dev = s->dev = get_device(&pdev->dev);
 
 #ifndef CONFIG_MXS_ORION28
-	if (s->port.line == 1) s->mode = UART_MODE_RS232;
-	if (s->port.line == 2) s->mode = UART_MODE_RS485;
+	if (s->port.line == 1) s->mode = UART_MODE_NONE;
+	if (s->port.line == 2) s->mode = UART_MODE_NONE;
 #else
 	if (s->port.line == 0) s->mode = UART_MODE_RS485;
 	if (s->port.line == 1) s->mode = UART_MODE_RS485;
