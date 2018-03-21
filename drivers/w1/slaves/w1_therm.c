@@ -166,23 +166,24 @@ static ssize_t w1_therm_read(struct device *device,
 {
 	struct w1_slave *sl = dev_to_w1_slave(device);
 	struct w1_master *dev = sl->master;
-	u8 rom[9], crc, verdict;
+	u8 rom[9], crc, verdict, external_power;
 	int i, max_trying = 10;
 	ssize_t c = PAGE_SIZE;
 
 	mutex_lock(&dev->mutex);
 
-	memset(rom, 0, sizeof(rom));
-
-	verdict = 0;
-	crc = 0;
+	memset(rom, 0, sizeof(rom));	
 
 	while (max_trying--) {
-		if (!w1_reset_select_slave(sl)) {
+	
+	verdict = 0;
+	crc = 0;
+	
+		/*if (!w1_reset_select_slave(sl)) {
 			int count = 0;
 			unsigned int tm = 750;
 
-			/* 750ms strong pullup (or delay) after the convert */
+			// 750ms strong pullup (or delay) after the convert 
 			if (w1_strong_pullup)
 				w1_next_pullup(dev, tm);
 			w1_write_8(dev, W1_CONVERT_TEMP);
@@ -206,6 +207,61 @@ static ssize_t w1_therm_read(struct device *device,
 		}
 
 		if (!w1_therm_check_rom(rom))
+			break;*/
+			
+		if (!w1_reset_select_slave(sl)) {
+			int count = 0;
+			unsigned int tm = 750;
+			unsigned long sleep_rem;
+
+			w1_write_8(dev, W1_READ_PSUPPLY);
+			external_power = w1_read_8(dev);
+
+			if (w1_reset_select_slave(sl))
+				continue;
+
+			/* 750ms strong pullup (or delay) after the convert */
+			if (w1_strong_pullup == 2 ||
+					(!external_power && w1_strong_pullup))
+				w1_next_pullup(dev, tm);
+
+			w1_write_8(dev, W1_CONVERT_TEMP);
+
+			if (external_power) {
+				mutex_unlock(&dev->bus_mutex);
+
+				sleep_rem = msleep_interruptible(tm);
+				if (sleep_rem != 0)
+					return -EINTR;
+
+				i = mutex_lock_interruptible(&dev->bus_mutex);
+				if (i != 0)
+					return i;
+			} else if (!w1_strong_pullup) {
+				sleep_rem = msleep_interruptible(tm);
+				if (sleep_rem != 0) {
+					mutex_unlock(&dev->bus_mutex);
+					return -EINTR;
+				}
+			}
+
+			if (!w1_reset_select_slave(sl)) {
+
+				w1_write_8(dev, W1_READ_SCRATCHPAD);
+				if ((count = w1_read_block(dev, rom, 9)) != 9) {
+					dev_warn(device, "w1_read_block() "
+						"returned %u instead of 9.\n",
+						count);
+				}
+
+				crc = w1_calc_crc8(rom, 8);
+
+				if (rom[8] == crc)
+					verdict = 1;
+			}
+		}
+
+		if (verdict)
 			break;
 	}
 

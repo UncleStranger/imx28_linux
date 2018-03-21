@@ -24,6 +24,21 @@
 #include "../w1_int.h"
 
 /**
+ * Allow the active pullup to be disabled, default is enabled.
+ *
+ * Note from the DS2482 datasheet:
+ * The APU bit controls whether an active pullup (controlled slew-rate
+ * transistor) or a passive pullup (Rwpu resistor) will be used to drive
+ * a 1-Wire line from low to high. When APU = 0, active pullup is disabled
+ * (resistor mode). Active Pullup should always be selected unless there is
+ * only a single slave on the 1-Wire line.
+ */
+static int ds2482_active_pullup = 1;
+module_param_named(active_pullup, ds2482_active_pullup, int, 0644);
+MODULE_PARM_DESC(active_pullup, "Active pullup (apply to all buses): " \
+				"0-disable, 1-enable (default)");
+
+/**
  * The DS2482 registers - there are 3 registers that are addressed by a read
  * pointer. The read pointer is set by the last command executed.
  *
@@ -129,6 +144,19 @@ struct ds2482_data {
 	u8			read_prt;	/* see DS2482_PTR_CODE_xxx */
 	u8			reg_config;
 };
+
+/**
+ * Helper to calculate values for configuration register
+ * @param conf the raw config value
+ * @return the value w/ complements that can be written to register
+ */
+static inline u8 ds2482_calculate_config(u8 conf)
+{
+	if (ds2482_active_pullup)
+		conf |= DS2482_REG_CFG_APU;
+
+	return conf | ((~conf & 0x0f) << 4);
+}
 
 
 /**
@@ -399,13 +427,40 @@ static u8 ds2482_w1_reset_bus(void *data)
 		/* If the chip did reset since detect, re-config it */
 		if (err & DS2482_REG_STS_RST)
 			ds2482_send_cmd_data(pdev, DS2482_CMD_WRITE_CONFIG,
-					     0xF0);
+					     ds2482_calculate_config(0x00));
 	}
 
 	mutex_unlock(&pdev->access_lock);
 
 	return retval;
 }
+
+static u8 ds2482_w1_set_pullup(void *data, int delay)
+{
+	struct ds2482_w1_chan *pchan = data;
+	struct ds2482_data    *pdev = pchan->pdev;
+	u8 retval = 1;
+
+	/* if delay is non-zero activate the pullup,
+	 * the strong pullup will be automatically deactivated
+	 * by the master, so do not explicitly deactive it
+	 */
+	if (delay) {
+		/* both waits are crucial, otherwise devices might not be
+		 * powered long enough, causing e.g. a w1_therm sensor to
+		 * provide wrong conversion results
+		 */
+		ds2482_wait_1wire_idle(pdev);
+		/* note: it seems like both SPU and APU have to be set! */
+		retval = ds2482_send_cmd_data(pdev, DS2482_CMD_WRITE_CONFIG,
+			ds2482_calculate_config(DS2482_REG_CFG_SPU |
+						DS2482_REG_CFG_APU));
+		ds2482_wait_1wire_idle(pdev);
+	}
+
+	return retval;
+}
+
 
 
 static int ds2482_probe(struct i2c_client *client,
@@ -415,7 +470,7 @@ static int ds2482_probe(struct i2c_client *client,
 	int err = -ENODEV;
 	int temp1;
 	int idx;
-
+	
 	if (!i2c_check_functionality(client->adapter,
 				     I2C_FUNC_SMBUS_WRITE_BYTE_DATA |
 				     I2C_FUNC_SMBUS_BYTE))
@@ -451,8 +506,9 @@ static int ds2482_probe(struct i2c_client *client,
 	if (ds2482_set_channel(data, 7) == 0)
 		data->w1_count = 8;
 
-	/* Set all config items to 0 (off) */
-	ds2482_send_cmd_data(data, DS2482_CMD_WRITE_CONFIG, 0xF0);
+	/* Set all config items to 0 (off)   */
+	ds2482_send_cmd_data(data, DS2482_CMD_WRITE_CONFIG,
+		ds2482_calculate_config(0x00));
 
 	mutex_init(&data->access_lock);
 
@@ -468,6 +524,7 @@ static int ds2482_probe(struct i2c_client *client,
 		data->w1_ch[idx].w1_bm.touch_bit  = ds2482_w1_touch_bit;
 		data->w1_ch[idx].w1_bm.triplet    = ds2482_w1_triplet;
 		data->w1_ch[idx].w1_bm.reset_bus  = ds2482_w1_reset_bus;
+		data->w1_ch[idx].w1_bm.set_pullup = ds2482_w1_set_pullup;
 
 		err = w1_add_master_device(&data->w1_ch[idx].w1_bm);
 		if (err) {

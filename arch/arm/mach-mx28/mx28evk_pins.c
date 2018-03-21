@@ -49,6 +49,7 @@ static struct pin_desc mx28evk_fixed_pins[] = {
 	 .id    = PINID_AUART0_TX,
 	 .fun   = PIN_FUN1,
 	 },
+#if 0
 	{
 	 .name  = "AUART0.CTS",
 	 .id    = PINID_AUART0_CTS,
@@ -59,6 +60,7 @@ static struct pin_desc mx28evk_fixed_pins[] = {
 	 .id    = PINID_AUART0_RTS,
 	 .fun   = PIN_FUN1,
 	 },
+#endif
 #endif
 #ifdef CONFIG_MXS_AUART1_DEVICE_ENABLE
 	{
@@ -197,6 +199,18 @@ static struct pin_desc mx28evk_fixed_pins[] = {
 	 .name  = "AUART3.RTS",
 	 .id    = PINID_AUART3_RTS,
 	 .fun   = PIN_FUN1,
+	 },
+#endif
+#ifdef CONFIG_MXS_AUART4_DEVICE_ENABLE
+	{
+	 .name  = "AUART4.RX",
+	 .id    = PINID_AUART0_CTS,
+	 .fun   = PIN_FUN2,
+	 },
+	{
+	 .name  = "AUART4.TX",
+	 .id    = PINID_AUART0_RTS,
+	 .fun   = PIN_FUN2,
 	 },
 #endif
 #endif
@@ -1265,6 +1279,43 @@ static struct pin_desc mx28evk_spi_pins[] = {
 
 #if defined(CONFIG_FEC) || defined(CONFIG_FEC_MODULE)\
 	|| defined(CONFIG_FEC_L2SWITCH)
+#ifdef CONFIG_MX28_ENET_ISSUE
+int mx28evk_enet_gpio_assert(void)
+{
+	gpio_set_value_cansleep(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 0);
+	return 0;
+}
+int mx28evk_enet_gpio_init(void)
+{
+	/*
+	 * reset phy
+	 * if init called after assert() called
+	 * nRST is already low and the following does nothing,
+	 * otherwise it asserts nRST to perform valid reset
+	 */
+	//gpio_set_value_cansleep(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 0);
+	gpio_request(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), "PHY_RESET");
+	gpio_direction_output(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 0);
+
+	/* LAN8720a minimum reset hold time 100us */
+	udelay(200);
+	mdelay(50);
+	//gpio_set_value_cansleep(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 1);
+	gpio_direction_output(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 1);
+
+	/* LAN8720a output drive after nRST deassertion after max 800ns */
+	udelay(1);
+
+	/*
+	 * FIXME: Additional delay needed during fec_enet_adjust_link()
+	 * or any of its subfunctions or else link won't be reported.
+	 * Tricky: enabled trace printks also produce that delay
+	 */
+	mdelay(1);
+
+	return 0;
+}
+#else
 int mx28evk_enet_gpio_init(void)
 {
 	/* pwr */
@@ -1285,6 +1336,7 @@ int mx28evk_enet_gpio_init(void)
 
 	return 0;
 }
+#endif
 
 void mx28evk_enet_io_lowerpower_enter(void)
 {
@@ -1379,6 +1431,14 @@ void __init mx28evk_pins_init(void)
 
 #if defined(CONFIG_FEC) || defined(CONFIG_FEC_MODULE)\
 	|| defined(CONFIG_FEC_L2SWITCH)
+	
+	
+#ifdef CONFIG_MX28_ENET_ISSUE
+		//gpio_request(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), "PHY_RESET");
+		//gpio_direction_output(MXS_PIN_TO_GPIO(PINID_ENET0_RX_CLK), 1);
+		mx28evk_init_pin_group(mx28evk_eth_pins,
+						ARRAY_SIZE(mx28evk_eth_pins));
+#endif
 		mx28evk_init_pin_group(mx28evk_eth_pins,
 						ARRAY_SIZE(mx28evk_eth_pins));
 #endif

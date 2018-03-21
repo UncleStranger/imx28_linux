@@ -58,6 +58,20 @@
 #define UART_MODE_RS485 2
 #define UART_MODE_RS422 3
 
+#ifdef CONFIG_MXS_ORION28
+#define	UART0_INIT_MODE UART_MODE_RS485
+#define	UART1_INIT_MODE UART_MODE_RS485
+#define	UART2_INIT_MODE UART_MODE_RS485	
+#define	UART3_INIT_MODE UART_MODE_NONE
+#define	UART4_INIT_MODE UART_MODE_NONE	
+#else
+#define	UART0_INIT_MODE UART_MODE_NONE
+#define	UART1_INIT_MODE UART_MODE_NONE
+#define	UART2_INIT_MODE UART_MODE_NONE
+#define	UART3_INIT_MODE UART_MODE_NONE
+#define	UART4_INIT_MODE UART_MODE_NONE	
+#endif	
+
 // temporary define pins as digital numbers
 #ifndef CONFIG_MXS_ORION28
 #define GPIO_PORT1_RS232_OFF 	64+12//PINID_SSP1_SCK
@@ -76,7 +90,6 @@
 #define GPIO_PORT1_RS485_RE	64+14//PINID_SSP1_DATA0
 #define GPIO_PORT2_RS485_DE	64+5//PINID_SSP0_DATA5
 #define GPIO_PORT2_RS485_RE	64+6//PINID_SSP0_DATA6
-
 #endif
 
 static struct uart_driver auart_driver;
@@ -158,6 +171,7 @@ static inline void mxs_auart_tx_chars(struct mxs_auart_port *s)
 		else {
 			if (uart_tx_stopped(&s->port))
 				mxs_auart_stop_tx(&s->port);
+			bEmpty = true;
 		}		
 		goto out;//return;
 	}
@@ -465,7 +479,7 @@ static void mxs_auart_submit_rx(struct mxs_auart_port *s)
 	struct mxs_dma_desc *pdesc;
 
 	pio_value = BM_UARTAPP_CTRL0_RXTO_ENABLE |
-		     BF_UARTAPP_CTRL0_RXTIMEOUT(0x80) |
+		     BF_UARTAPP_CTRL0_RXTIMEOUT(0x03/*0x80????*/) |
 		     BF_UARTAPP_CTRL0_XFER_COUNT(s->dma_rx_buffer_size);
 
 	list_for_each_safe(p, n, &s->free) {
@@ -822,7 +836,7 @@ static int mxs_auart_startup(struct uart_port *u)
 
 	if (s->flags & MXS_AUART_PORT_DMA_MODE)
 		mxs_auart_submit_rx(s);
-	//if (s->flags & MXS_AUART_PORT_DMA_MODE) {printk(KERN_INFO "DMA Mode \r\n");} else printk(KERN_INFO "no DMA Mode \r\n"); 
+	
 	return mxs_auart_request_irqs(s);
 }
 
@@ -846,21 +860,20 @@ static unsigned int mxs_auart_tx_empty(struct uart_port *u)
 {
 	struct mxs_auart_port *s = to_auart_port(u);
 	unsigned int status;
-	
-	//if (s->mode==UART_MODE_RS485) mxs_auart_set_rs485_de(s,false);	
+			
 	if (s->flags & MXS_AUART_PORT_DMA_MODE)
 		return mxs_dma_desc_pending(s->tx) ? 0 : TIOCSER_TEMT;
-
 	
 	/*
 	 *      Finally, wait for transmitter to become empty
 	 *      and restore the TCR
 	*/
-	//if (s->mode==UART_MODE_RS485) mxs_auart_set_rs485_de(s,true);	
-	do {
-		status = __raw_readl(u->membase + HW_UARTAPP_STAT);
-	} while (status & BM_UARTAPP_STAT_BUSY);
-	if (s->mode==UART_MODE_RS485) mxs_auart_set_rs485_de(s,false);	
+	if (s->mode==UART_MODE_RS485){		
+		do {
+			status = __raw_readl(u->membase + HW_UARTAPP_STAT);
+		} while (status & BM_UARTAPP_STAT_BUSY);
+	 	mxs_auart_set_rs485_de(s,false);
+	 }	
 	
 	if (__raw_readl(u->membase + HW_UARTAPP_STAT) &
 	    BM_UARTAPP_STAT_TXFE)
@@ -1202,9 +1215,7 @@ static int mxs_auart_set_mode (struct mxs_auart_port *port)
 		break;	
 	default:;	
 	}
-#endif	
-	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs232_off, MXS_PIN_TO_GPIO(rs232_off));
-	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs485_off, MXS_PIN_TO_GPIO(rs485_off));
+#endif		
 out:
 	printk(KERN_INFO "UART set mode; UART - %d, mode - %d \r\n",port->port.line, port->mode);
 	
@@ -1242,8 +1253,6 @@ static int mxs_auart_set_rs485_de (struct mxs_auart_port *port, bool bEnable)
 			gpio_direction_output(MXS_PIN_TO_GPIO(rs485_re), 1);
 			}
 	
-	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs232_off, MXS_PIN_TO_GPIO(rs232_off));
-	//printk(KERN_INFO "UART set mode; GPIO - %d, MXS_PIN_TO_GPIO - %d \r\n",rs485_off, MXS_PIN_TO_GPIO(rs485_off));
 out:
 	
 	return 0;
@@ -1296,18 +1305,24 @@ static int __devinit mxs_auart_probe(struct platform_device *pdev)
 	s->port.type = PORT_IMX;
 	s->port.dev = s->dev = get_device(&pdev->dev);
 
-#ifndef CONFIG_MXS_ORION28
-	if (s->port.line == 1) s->mode = UART_MODE_NONE;
-	if (s->port.line == 2) s->mode = UART_MODE_NONE;
-#else
-	if (s->port.line == 0) s->mode = UART_MODE_RS485;
-	if (s->port.line == 1) s->mode = UART_MODE_RS485;
-	if (s->port.line == 2) s->mode = UART_MODE_RS485;
-//	if (s->port.line == 3) s->mode = UART_MODE_RS485;	
-#endif
+	switch (s->port.line){
+	case 0:
+		s->mode = UART0_INIT_MODE;
+		break;
+	case 1:
+		s->mode = UART1_INIT_MODE;
+		break;
+	case 2:
+		s->mode = UART2_INIT_MODE;
+		break;
+	case 3:
+		s->mode = UART3_INIT_MODE;
+		break;
+	case 4:
+		s->mode = UART4_INIT_MODE;
+		break;
+	}
 
-	//printk(KERN_WARNING "Initializing AUART %d \r\n", s->port.line);
-	//printk(KERN_WARNING "AUART Mode: %d \r\n", (unsigned char) s->mode);
 	mxs_auart_set_mode(s);
 
 	s->flags = plat->dma_mode ? MXS_AUART_PORT_DMA_MODE : 0;
@@ -1353,9 +1368,9 @@ static int __devinit mxs_auart_probe(struct platform_device *pdev)
 		goto out_free_clk;
 
 	version = __raw_readl(s->port.membase + HW_UARTAPP_VERSION);
-	printk(KERN_INFO "Found APPUART %d.%d.%d\n",
+	printk(KERN_INFO "Found APPUART %d.%d.%d (%s)\n",
 	       (version >> 24) & 0xFF,
-	       (version >> 16) & 0xFF, version & 0xFFFF);
+	       (version >> 16) & 0xFF, version & 0xFFFF, s->flags & MXS_AUART_PORT_DMA_MODE ? "DMA":"No DMA");
 	return 0;
 
 out_free_clk:
