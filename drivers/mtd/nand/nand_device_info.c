@@ -1428,6 +1428,25 @@ static struct nand_device_info nand_device_info_table_type_10[] __initdata = {
 	.tRHOH_in_ns              = -1,
 	NULL,
 	},
+	{
+	.end_of_table             = false,
+	.manufacturer_code        = 0x2c,
+	.device_code              = 0xdc,
+	.cell_technology          = NAND_DEVICE_CELL_TECH_SLC,
+	.chip_size_in_bytes       = 512LL*SZ_1M,
+	.block_size_in_pages      = 64,
+	.page_total_size_in_bytes = 4*SZ_1K + 218,
+	.ecc_strength_in_bits     = 8,
+	.ecc_size_in_bytes        = 512,
+	.data_setup_in_ns         = 20,
+	.data_hold_in_ns          = 10,
+	.address_setup_in_ns      = 10,
+	.gpmi_sample_delay_in_ns  = 6,
+	.tREA_in_ns               = -1,
+	.tRLOH_in_ns              = -1,
+	.tRHOH_in_ns              = -1,
+	"MT29F4G08ABAEA",
+	},
 	{true}
 };
 
@@ -2138,15 +2157,19 @@ static struct nand_device_info * __init nand_device_info_fn_micron(const uint8_t
 
 	if (ID_GET_CELL_TYPE_CODE(id) == ID_CELL_TYPE_CODE_SLC) {
 
-		/* Check number of simultaneously programmed pages. */
+		if (ID_GET_PAGE_SIZE_CODE(id) == ID_PAGE_SIZE_CODE_4K) {
+			/* Type 10 */
+			table = nand_device_info_table_type_10;
+		} else		
+			/* Check number of simultaneously programmed pages. */
 
-		if (ID_GET_MICRON_SIMUL_PROG(id)) {
-			/* Type 7 */
-			table = nand_device_info_table_type_7;
-		} else {
-			/* Zero simultaneously programmed pages means Type 2. */
-			table = nand_device_info_table_type_2;
-		}
+			if (ID_GET_MICRON_SIMUL_PROG(id)) {
+				/* Type 7 */
+				table = nand_device_info_table_type_7;
+			} else {
+				/* Zero simultaneously programmed pages means Type 2. */
+				table = nand_device_info_table_type_2;
+			}
 
 		return nand_device_info_search(table, ID_GET_MFR_CODE(id),
 							ID_GET_DEVICE_CODE(id));
